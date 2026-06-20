@@ -22,12 +22,10 @@ crest fades in: "By Order of the Hart Family" -> dissolve into hero
 3. **The Order of the Day** - date / time / ceremony + reception venue / map / timeline.
 4. **The Dress Code** - 1920s formal / Peaky Blinders attire encouraged.
 5. **The Gallery** - cinematic photoshoot frames.
-6. **The Invitation (RSVP)** - personal accept/decline flow.
+6. **The Invitation (RSVP)** - static RSVP showcase panel for presentation only.
 7. **Footer** - a closing line / quote.
 
 ## Copy & tone
 
 - Hero: *"Adrian & Serena - a union, by order of the family."*
-- RSVP accept: *"You're on the list. We'll see you there."*
-- RSVP decline: *"Understood. You'll be missed."*
-- Invalid link: *"This invitation could not be found."*
+- RSVP section: *"A polished RSVP experience, presented without backend setup."*

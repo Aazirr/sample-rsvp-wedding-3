@@ -1,31 +1,16 @@
-# Adrian & Serena - Wedding Invitation Website
+# SunSpire Sample RSVP Showcase
 
-A cinematic, dark, Peaky Blinders / mafia-themed wedding invitation site with a
-token-gated RSVP system, an admin dashboard, and CSV export.
-
-> **Couple:** Adrian Cole Hart & Serena Vale Bennett
-> **Theme:** Peaky Blinders (groom) / red mafia (bride) - cinematic, dark, red light leaks, smoke & whiskey.
-
----
+A cinematic sample invitation site with placeholder content for demos and client
+review. This build is intentionally static and does not include database-backed
+RSVP, admin authentication, or tokenized invite links.
 
 ## Documentation index
 
 | Doc | What's inside |
 |-----|---------------|
-| [concept.md](./concept.md) | Creative direction - vibe, sections, intro, copy, effects |
-| [architecture.md](./architecture.md) | Tech stack, hosting, project structure |
-| [data-model.md](./data-model.md) | Database schema, CSV export format |
-| [invite-system.md](./invite-system.md) | Unique invite + RSVP flow, duplicate prevention |
-| [admin.md](./admin.md) | Admin dashboard spec & auth |
-| [content.md](./content.md) | Sample content placeholders and editable fields |
-| [decisions.md](./decisions.md) | Decision log - every choice made and why |
-| [roadmap.md](./roadmap.md) | Build roadmap & current status |
-| [development-phases.md](./development-phases.md) | Current implementation progress checklist |
-
----
-
-## Status
-
-**Phase:** Sample site copied into the SunSpire workspace with placeholder names,
-date, and venue details. See [development-phases.md](./development-phases.md)
-for the current checklist.
+| [concept.md](./concept.md) | Creative direction and page flow |
+| [architecture.md](./architecture.md) | Simplified showcase architecture |
+| [content.md](./content.md) | Placeholder names, venue, date, and copy |
+| [decisions.md](./decisions.md) | Why the sample is static and env-free |
+| [roadmap.md](./roadmap.md) | Remaining polish work for the showcase |
+| [development-phases.md](./development-phases.md) | Current implementation checklist |

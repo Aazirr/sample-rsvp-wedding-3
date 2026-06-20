@@ -37,7 +37,5 @@ This sample uses placeholder content stored in `content/config.ts`.
 | Hero tagline | "A union, by order of the family." |
 | Details section title | "The Order of the Day" |
 | Dress code body | "1920s formal / Peaky Blinders attire encouraged." |
-| RSVP accept | "You're on the list. We'll see you there." |
-| RSVP decline | "Understood. You'll be missed." |
-| Invalid invite | "This invitation could not be found." |
+| RSVP section copy | "A polished RSVP experience, presented as a static showcase block." |
 | Footer | "Love arrives quietly, then changes everything..." |

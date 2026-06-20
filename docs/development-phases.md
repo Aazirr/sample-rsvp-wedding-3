@@ -6,7 +6,7 @@
 - [x] Replace sample venue locations with placeholder locations across the site content
 - [x] Replace sample event dates with placeholder dates across the site content
 - [x] Update `/docs` files so the project truth-source matches the placeholder sample
-- [x] Fix build-time database import failure so Vercel can compile before env vars are available at runtime
-- [ ] Connect environment variables for database and admin authentication
+- [x] Remove database, admin, and tokenized RSVP features so the sample needs no `.env` setup
+- [x] Ensure the showcase build deploys without environment variables
 - [ ] Run production deployment setup
 - [ ] Replace placeholder text and sample images with final client assets
