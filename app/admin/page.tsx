@@ -1,5 +1,5 @@
 import { isAdminAuthenticated } from "@/lib/auth";
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import AdminDashboard from "./AdminDashboard";
 import AdminLogin from "./AdminLogin";
 
@@ -15,6 +15,7 @@ type Guest = {
 };
 
 export default async function AdminPage() {
+  const sql = getSql();
   const authed = await isAdminAuthenticated();
 
   if (!authed) {

@@ -39,6 +39,7 @@ Stored in `.env.local` (gitignored), set in Vercel project settings for prod:
 | `ADMIN_PATH_SECRET` | The unguessable segment of the admin URL |
 
 > Real values are never committed. They're created in Neon/Vercel at deploy time.
+> The database client validates `DATABASE_URL` at request time, not import time, so production builds can complete before runtime env vars are exercised.
 
 ## Extensibility
 

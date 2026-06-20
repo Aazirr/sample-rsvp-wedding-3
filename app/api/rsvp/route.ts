@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 
 export async function GET(req: NextRequest) {
+  const sql = getSql();
   const token = req.nextUrl.searchParams.get("token");
   if (!token) return NextResponse.json({ error: "No token" }, { status: 400 });
 
@@ -14,6 +15,7 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  const sql = getSql();
   const body = await req.json().catch(() => null);
   if (!body?.token || !body?.status) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });

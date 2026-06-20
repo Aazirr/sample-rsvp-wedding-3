@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import { wedding } from "@/content/config";
 import InviteClient from "./InviteClient";
 
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default async function InvitePage({ params }: Props) {
+  const sql = getSql();
   const { token } = await params;
 
   const rows = await sql`

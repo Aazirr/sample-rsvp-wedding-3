@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import { generateToken } from "@/lib/tokens";
 import { isAdminAuthenticated } from "@/lib/auth";
 
 export async function POST(req: NextRequest) {
+  const sql = getSql();
+
   if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
@@ -23,6 +25,8 @@ export async function POST(req: NextRequest) {
 }
 
 export async function DELETE(req: NextRequest) {
+  const sql = getSql();
+
   if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }

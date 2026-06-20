@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { sql } from "@/lib/db";
+import { getSql } from "@/lib/db";
 import { isAdminAuthenticated } from "@/lib/auth";
 
 type GuestRow = {
@@ -10,6 +10,8 @@ type GuestRow = {
 };
 
 export async function GET() {
+  const sql = getSql();
+
   if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
